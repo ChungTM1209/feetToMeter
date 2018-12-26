@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <p> Chuyen doi </p>
+</head>
+<body>
+<input type="number" id = "number" placeholder="Input number">
+<input type="button" id = "toMeter" onclick="toMeter()" value="Feet To Meter">
+<input type="button" id = "toFoot" onclick="toFoot()" value="Meter To Foot">
+<script>
+function toMeter(meter) {
+    var num = parseFloat(document.getElementById('number').value);
+    meter = 0.305 * num;
+    alert("Feet to Meter: " + meter);
+}
+function toFoot(foot) {
+    var num = parseFloat(document.getElementById('number').value);
+    foot = 3.279 * num;
+    alert("Meter to Feet: " + foot);
+
+}
+</script>
+</body>
+</html>
